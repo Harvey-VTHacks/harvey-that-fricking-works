@@ -13,7 +13,7 @@ class APIKeyManager:
         
     def load_api_key(self):
         """Load single API key from .env"""
-        api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
         
         if not api_key:
             print("❌ No API key found! Please set up your .env file:")
